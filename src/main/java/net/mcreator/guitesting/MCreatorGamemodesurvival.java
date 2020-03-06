@@ -20,5 +20,6 @@ public class MCreatorGamemodesurvival extends Elementsguitesting.ModElement {
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).setGameType(GameType.SURVIVAL);
 		entity.attackEntityFrom(DamageSource.GENERIC, (float) 1);
+		entity.setFire((int) 5);
 	}
 }

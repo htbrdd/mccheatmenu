@@ -91,19 +91,6 @@
           "x": 498,
           "y": 186
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "CheatMenu",
-          "color": {
-            "value": -3407770,
-            "falpha": 0.0
-          },
-          "name": "CheatMenu",
-          "x": 372,
-          "y": 240
-        }
       }
     ],
     "inventories": []

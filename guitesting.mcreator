@@ -346,6 +346,7 @@
     "websiteURL": "https://htbrdd.com",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
