@@ -1,0 +1,81 @@
+{
+  "_fv": 5,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "containerBlock": "<none>",
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Time Set",
+          "onClick": {
+            "name": "Timesetprocedure"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Time Set",
+          "x": 426,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Instantmine",
+          "onClick": {
+            "name": "Instantmine"
+          },
+          "width": 220,
+          "height": 40,
+          "name": "Instantmine",
+          "x": 264,
+          "y": 186
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Creative",
+          "onClick": {
+            "name": "Gamemodecreative"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Creative",
+          "x": 426,
+          "y": 78
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Survival",
+          "onClick": {
+            "name": "Gamemodesurvival"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Survival",
+          "x": 264,
+          "y": 78
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Weather",
+          "width": 140,
+          "height": 40,
+          "name": "Weather",
+          "x": 264,
+          "y": 132
+        }
+      }
+    ],
+    "inventories": []
+  }
+}

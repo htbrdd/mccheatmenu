@@ -1,0 +1,70 @@
+{
+  "_fv": 5,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "containerBlock": "<none>",
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Dawn",
+          "onClick": {
+            "name": "Timesetdawn"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "Dawn",
+          "x": 263,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Midday",
+          "onClick": {
+            "name": "Timesetmidday"
+          },
+          "width": 120,
+          "height": 40,
+          "name": "Midday",
+          "x": 354,
+          "y": 83
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dusk",
+          "onClick": {
+            "name": "Timesetduak"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "Dusk",
+          "x": 487,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Night",
+          "onClick": {
+            "name": "Timesetnight"
+          },
+          "width": 100,
+          "height": 40,
+          "name": "Night",
+          "x": 365,
+          "y": 130
+        }
+      }
+    ],
+    "inventories": []
+  }
+}
