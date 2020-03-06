@@ -16,7 +16,7 @@ public class MCreatorKill extends Elementsguitesting.ModElement {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (!entity.world.isRemote && entity.world.getServer() != null) {
 			entity.world.getServer().getCommandManager()
-					.handleCommand(entity.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "kill");
+					.handleCommand(entity.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "kill all");
 		}
 	}
 }

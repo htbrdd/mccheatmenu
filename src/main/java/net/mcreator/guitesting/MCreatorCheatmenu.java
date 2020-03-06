@@ -141,7 +141,7 @@ public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("CheatMenu", 70, 83, -3407770);
+			this.font.drawString("CheatMenu", 61, 83, -3407770);
 		}
 
 		@Override
