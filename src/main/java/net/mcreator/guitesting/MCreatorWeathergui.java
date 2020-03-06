@@ -30,12 +30,12 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Elementsguitesting.ModElement.Tag
-public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
+public class MCreatorWeathergui extends Elementsguitesting.ModElement {
 	public static HashMap guiinventory = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 
-	public MCreatorCheatmenu(Elementsguitesting instance) {
-		super(instance, 1);
+	public MCreatorWeathergui(Elementsguitesting instance) {
+		super(instance, 15);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new, ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
@@ -50,7 +50,7 @@ public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
 
 	@SubscribeEvent
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("cheatmenu"));
+		event.getRegistry().register(containerType.setRegistryName("weathergui"));
 	}
 
 	public static class GuiContainerModFactory implements IContainerFactory {
@@ -116,7 +116,7 @@ public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("guitesting:textures/cheatmenu.png");
+		private static final ResourceLocation texture = new ResourceLocation("guitesting:textures/weathergui.png");
 
 		@Override
 		public void render(int mouseX, int mouseY, float partialTicks) {
@@ -153,25 +153,13 @@ public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 88, this.guiTop + 29, 80, 20, "Time Set", e -> {
+			this.addButton(new Button(this.guiLeft + 7, this.guiTop + 11, 40, 20, "Rain", e -> {
 				guitesting.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 7, this.guiTop + 56, 110, 20, "Instantmine", e -> {
+			this.addButton(new Button(this.guiLeft + 52, this.guiTop + 11, 80, 20, "Rain Off", e -> {
 				guitesting.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 88, this.guiTop + 2, 80, 20, "Creative", e -> {
-				guitesting.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
-				handleButtonAction(entity, 2, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 7, this.guiTop + 2, 80, 20, "Survival", e -> {
-				guitesting.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
-				handleButtonAction(entity, 3, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 7, this.guiTop + 29, 70, 20, "Weather", e -> {
-				guitesting.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
-				handleButtonAction(entity, 4, x, y, z);
 			}));
 		}
 	}
@@ -269,43 +257,14 @@ public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MCreatorTimesetprocedure.executeProcedure($_dependencies);
+				MCreatorWeatherrain.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 1) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
-				MCreatorInstantmine.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 2) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				MCreatorGamemodecreative.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 3) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				MCreatorGamemodesurvival.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 4) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MCreatorWeatherguiprocedure.executeProcedure($_dependencies);
+				MCreatorRainoff.executeProcedure($_dependencies);
 			}
 		}
 	}

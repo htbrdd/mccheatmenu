@@ -68,6 +68,9 @@
         "type": "button",
         "data": {
           "text": "Weather",
+          "onClick": {
+            "name": "Weatherguiprocedure"
+          },
           "width": 140,
           "height": 40,
           "name": "Weather",

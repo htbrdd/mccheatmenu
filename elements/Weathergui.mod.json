@@ -1,0 +1,42 @@
+{
+  "_fv": 5,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "containerBlock": "<none>",
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Rain",
+          "onClick": {
+            "name": "Weatherrain"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "Rain",
+          "x": 264,
+          "y": 96
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Rain Off",
+          "onClick": {
+            "name": "Rainoff"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Rain Off",
+          "x": 354,
+          "y": 96
+        }
+      }
+    ],
+    "inventories": []
+  }
+}
