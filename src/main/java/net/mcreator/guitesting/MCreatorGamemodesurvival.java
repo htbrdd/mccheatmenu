@@ -1,6 +1,7 @@
 package net.mcreator.guitesting;
 
 import net.minecraft.world.GameType;
+import net.minecraft.util.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
@@ -18,5 +19,6 @@ public class MCreatorGamemodesurvival extends Elementsguitesting.ModElement {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).setGameType(GameType.SURVIVAL);
+		entity.attackEntityFrom(DamageSource.GENERIC, (float) 1);
 	}
 }
