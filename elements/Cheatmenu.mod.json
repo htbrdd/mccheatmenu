@@ -77,6 +77,20 @@
           "x": 264,
           "y": 132
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Kill",
+          "onClick": {
+            "name": "Kill"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "Kill",
+          "x": 498,
+          "y": 186
+        }
       }
     ],
     "inventories": []

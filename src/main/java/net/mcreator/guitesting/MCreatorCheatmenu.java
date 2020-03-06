@@ -173,6 +173,10 @@ public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
 				guitesting.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
 				handleButtonAction(entity, 4, x, y, z);
 			}));
+			this.addButton(new Button(this.guiLeft + 124, this.guiTop + 56, 40, 20, "Kill", e -> {
+				guitesting.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(5, x, y, z));
+				handleButtonAction(entity, 5, x, y, z);
+			}));
 		}
 	}
 
@@ -306,6 +310,13 @@ public class MCreatorCheatmenu extends Elementsguitesting.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				MCreatorWeatherguiprocedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 5) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				MCreatorKill.executeProcedure($_dependencies);
 			}
 		}
 	}

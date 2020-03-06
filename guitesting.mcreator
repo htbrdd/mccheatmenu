@@ -312,6 +312,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Kill",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -324,10 +340,10 @@
   "workspaceSettings": {
     "modid": "guitesting",
     "modName": "guitesting",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Cheatmenu",
     "author": "htbrdd",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://htbrdd.com",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],

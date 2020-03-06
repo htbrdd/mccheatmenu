@@ -3,10 +3,10 @@ loaderVersion="[28,)"
 
 [[mods]]
 modId="guitesting"
-version="1.0.0"
+version="1.0.1"
 displayName="guitesting"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+displayURL="https://htbrdd.com"
 authors="htbrdd, MCreator"
 description='''
 Cheatmenu
