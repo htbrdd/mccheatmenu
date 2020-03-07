@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "guitesting:textures/weathergui.png",
+    "icon": {
+      "item": "minecraft:slime_block"
+    },
+    "title": {
+      "translate": "advancements.cheatmenuget.title"
+    },
+    "description": {
+      "translate": "advancements.cheatmenuget.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cheatmenuget": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

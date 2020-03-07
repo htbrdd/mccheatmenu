@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "guitesting:blocks/cheatmenublock",
+    "up": "guitesting:blocks/cheatmenublock",
+    "north": "guitesting:blocks/cheatmenublock",
+    "east": "guitesting:blocks/cheatmenublock",
+    "south": "guitesting:blocks/cheatmenublock",
+    "west": "guitesting:blocks/cheatmenublock",
+    "particle": "guitesting:blocks/cheatmenublock"
+  }
+}

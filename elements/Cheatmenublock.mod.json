@@ -1,0 +1,84 @@
+{
+  "_fv": 5,
+  "_type": "block",
+  "definition": {
+    "texture": "cheatmenublock",
+    "textureTop": "cheatmenublock",
+    "textureLeft": "cheatmenublock",
+    "textureFront": "cheatmenublock",
+    "textureRight": "cheatmenublock",
+    "textureBack": "cheatmenublock",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "hasTransparency": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "faceShape": "SOLID",
+    "name": "Cheatmenublock",
+    "specialInfo": [],
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": true,
+    "creativeTab": {
+      "value": "BUILDING_BLOCKS"
+    },
+    "destroyTool": "pickaxe",
+    "affectedBySilkTouch": true,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "isBeaconBase": true,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": true,
+    "canProvidePower": true,
+    "lightOpacity": 255,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "isReplaceable": false,
+    "isFlammable": true,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "isNotColidable": true,
+    "soundOnStep": {
+      "value": "GROUND"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "PORTAL"
+    },
+    "particleSpawningShape": "Top",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": true,
+    "inventorySize": 9,
+    "inventoryStackSize": 1,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "onRightClicked": {
+      "name": "CheatmenukeyOnKeyPressed"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

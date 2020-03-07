@@ -328,12 +328,31 @@
           }
         ]
       }
+    },
+    {
+      "name": "Cheatmenuget",
+      "type": "achievement",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Cheatmenublock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.cheatmenuget.descr": "Started Cheat Menu.",
+      "block.guitesting.cheatmenublock": "Cheatmenublock",
+      "advancements.cheatmenuget.title": "Cheatmenuget",
       "key.mcreator.cheatmenukey": "Cheatmenukey"
     }
   },
